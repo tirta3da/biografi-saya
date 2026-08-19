@@ -38,6 +38,15 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             border-radius: 10px;
         }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px auto;
+            border: 4px solid #1abc9c;
+            display: block;
+        }
         h2 {
             color: #2c3e50;
             border-bottom: 2px solid #ecf0f1;
@@ -66,6 +75,18 @@
             font-size: 1.1rem;
             margin-bottom: 5px;
         }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -79,35 +100,70 @@
 <body>
 
 <header>
+    <!-- Ganti 'profil.jpg' dengan nama file foto profil Anda setelah diunggah ke GitHub -->
+    <img src="profil.jpg" alt="Foto Profil Mohammad Tirta Fakhri Akbar" class="profile-img">
     <h1>Mohammad Tirta Fakhri Akbar</h1>
-    <p>Mahasiswa Teknologi Rekayasa Instrumentasi dan Kontrol | UGM</p>
+    <p>Mahasiswa Teknologi Rekayasa Instrumentasi dan Kontrol | Universitas Gadjah Mada</p>
 </header>
 
 <div class="container">
+    <div class="contact-info">
+        <p>Sleman, Yogyakarta, Indonesia</p>
+        <p>
+            <a href="mailto:mohammadtirtafakhriakbar@mail.ugm.ac.id">Email</a> | 
+            <a href="https://www.linkedin.com/in/mohammad-tirta-fakhri-akbar-254b932a0/" target="_blank">LinkedIn</a>
+        </p>
+    </div>
+
     <h2>Tentang Saya</h2>
-    <p>Saya adalah mahasiswa Sarjana Terapan angkatan 2023 di Sekolah Vokasi, Universitas Gadjah Mada. Saya memiliki minat dan dedikasi yang tinggi dalam sistem instrumentasi, teknologi IoT untuk aplikasi industri dan lingkungan, pemrograman sistem *embedded*, serta otomasi. Saya terbiasa merancang solusi teknis dari hulu ke hilir, mulai dari pemilihan spesifikasi sensor hingga merancang infrastruktur komunikasinya.</p>
+    <p>Mahasiswa Teknologi Rekayasa Instrumentasi dan Kontrol Universitas Gadjah Mada dengan minat kuat pada instrumentasi industri, sistem kendali, otomasi, elektronika, *embedded system*, dan *Internet of Things* (IoT)[cite: 1]. Memiliki pengalaman dalam pengembangan sistem *monitoring*, sistem notifikasi industri, *transmitter* instrumentasi, serta integrasi sensor dan aktuator[cite: 1]. Menguasai MATLAB, Arduino IDE, Proteus, CX-Programmer, SolidWorks, C/C++, dan Python[cite: 1]. Memiliki motivasi tinggi untuk mengembangkan solusi rekayasa yang inovatif, aplikatif, dan relevan dengan kebutuhan industri[cite: 1].</p>
+
+    <h2>Pendidikan</h2>
+    <ul class="project-list">
+        <li>
+            <strong>Universitas Gadjah Mada Yogyakarta, Indonesia</strong>
+            Sarjana Terapan Teknologi Rekayasa Instrumentasi dan Kontrol (Agustus 2023 - Sekarang)[cite: 1]<br>
+            IPK Sementara: 3.76/4.00[cite: 2]
+        </li>
+        <li>
+            <strong>MAS Tarbiyatut Tholabah - Lamongan, Jawa Timur, Indonesia</strong>
+            Madrasah Aliyah Jurusan Matematika dan Ilmu Pengetahuan Alam (Juni 2020 - Juni 2023)[cite: 1]<br>
+            Nilai: 91.20/100.00[cite: 1]
+        </li>
+    </ul>
 
     <h2>Keahlian Teknis</h2>
     <ul class="skills-list">
-        <li><strong>Mikrokontroler & IoT:</strong> Pemrograman Arduino, ESP32, STM32, arsitektur LPWAN, dan integrasi modul untuk Automatic Weather Station.</li>
-        <li><strong>Elektronika & Kendali:</strong> Perancangan rangkaian elektronik, desain PCB, metrologi, sinyal prosesing, dan pengaplikasian sistem kendali.</li>
-        <li><strong>Instalasi Kelistrikan:</strong> Perancangan tata letak penerangan, *trenching*, perpipaan *conduit*, dan manajemen daya pada fasilitas fisik.</li>
-        <li><strong>Desain Digital:</strong> Visualisasi konten informasi teknis dan pertanian menggunakan Canva serta integrasi sistem QR code.</li>
+        <li><strong>Bidang Fokus:</strong> Instrumentasi Industri, Kalibrasi Instrumen, Kontrol Proses, Otomasi Industri, *Embedded System*, *Internet of Things* (IoT)[cite: 1].</li>
+        <li><strong>Perangkat Keras & Desain:</strong> ESP32, Desain PCB, Analisis dan Troubleshooting Rangkaian[cite: 1].</li>
+        <li><strong>Perangkat Lunak & Pemrograman:</strong> C/C++, Python, MATLAB, Machine Learning, Pemrograman PLC (CX-Programmer), Pengembangan HMI (CX-Designer, AVEVA InTouch), SolidWorks, Proteus[cite: 1].</li>
     </ul>
 
     <h2>Pengalaman & Proyek Terkini</h2>
     <ul class="project-list">
         <li>
-            <strong>Magang Interaktif - PT Merapi Tani Instrumen (Mertani)</strong>
-            Berfokus pada pengembangan *end-to-end* solusi IoT dan pengaplikasian teknologi sensor untuk lingkungan agrikultur (Dimulai Agustus 2026).
+            <strong>Magang Engineering - Instrumentasi dan Utilitas (PT Global Onkolab Farma / Kalbe Group)</strong>
+            Juli 2025 - Desember 2025[cite: 1]. Melakukan kalibrasi instrumen, *preventive maintenance* sistem utilitas industri (HVAC, PW, WFI, PSG), dan mengembangkan sistem *monitoring* utilitas berbasis ESP32[cite: 1].
+        </li>
+        <li>
+            <strong>Sistem Alarm Keselamatan Cold Storage Berbasis Monitoring dan Notifikasi Real-Time</strong>
+            Agustus 2025 - September 2025[cite: 1]. Mengembangkan sistem alarm berbasis ESP32 dengan komunikasi MQTT dan notifikasi Telegram untuk memantau aktivitas pekerja di lingkungan industri[cite: 1].
+        </li>
+        <li>
+            <strong>Alat Pengukur Dimensi Luka Berbasis AI dan Sensor Non-Kontak</strong>
+            Agustus 2024 - Januari 2025[cite: 1]. Mengembangkan alat pengukur menggunakan Raspberry Pi, kamera, dan sensor *Time-of-Flight* (TOF), serta melatih model YOLOv8 untuk deteksi objek[cite: 1].
+        </li>
+        <li>
+            <strong>Industrial Differential Pressure Transmitter (DPT)</strong>
+            Juli 2025 - Desember 2025[cite: 1]. Merancang prototipe DPT untuk aplikasi industri, termasuk skematik, PCB, dan rangkaian *signal conditioning*[cite: 1].
         </li>
         <li>
             <strong>Manajemen Proyek KKN-PPM UGM</strong>
-            Menjadi koordinator dan inisiator program jalan sehat "Sawah Race" serta pasar tradisional "Pasar Mantra" di Desa Sidomulyo (Juli 2026).
+            Juli 2026. Menjadi koordinator program "Sawah Race" di Desa Sidomulyo.
         </li>
         <li>
             <strong>Pembangunan Infrastruktur Kelistrikan Peternakan</strong>
-            Eksekusi instalasi kabel dan perpipaan kelistrikan untuk kandang ayam petelur Omega-3 (Juli 2026).
+            Juli 2026. Instalasi kabel kelistrikan untuk kandang ayam petelur Omega-3.
         </li>
     </ul>
 </div>
