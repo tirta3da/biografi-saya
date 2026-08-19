@@ -31,12 +31,12 @@
             font-weight: 500;
         }
         .container {
-            max-width: 850px;
+            max-width: 900px;
             margin: -40px auto 40px auto;
-            padding: 30px;
+            padding: 40px;
             background: white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-radius: 12px;
         }
         .profile-img {
             width: 150px;
@@ -51,7 +51,8 @@
             color: #2c3e50;
             border-bottom: 2px solid #ecf0f1;
             padding-bottom: 10px;
-            margin-top: 30px;
+            margin-top: 40px;
+            font-size: 1.8rem;
         }
         .skills-list, .project-list {
             list-style-type: none;
@@ -59,41 +60,52 @@
         }
         .skills-list li, .project-list li {
             background: #fdfdfd;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 6px;
-            border-left: 4px solid #1abc9c;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-            transition: transform 0.2s ease;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #1abc9c;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .skills-list li:hover, .project-list li:hover {
-            transform: translateX(5px);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
         .project-list li strong {
             display: block;
             color: #2c3e50;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             margin-bottom: 5px;
+        }
+        .project-list li span.date {
+            display: block;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            font-style: italic;
         }
         .contact-info {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
         }
         .contact-info a {
             color: #3498db;
             text-decoration: none;
             margin: 0 10px;
+            font-weight: 500;
         }
         .contact-info a:hover {
             text-decoration: underline;
+            color: #2980b9;
         }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             color: #7f8c8d;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             border-top: 1px solid #ecf0f1;
-            margin-top: 40px;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -116,55 +128,95 @@
     </div>
 
     <h2>Tentang Saya</h2>
-    <p>Mahasiswa Teknologi Rekayasa Instrumentasi dan Kontrol Universitas Gadjah Mada dengan minat kuat pada instrumentasi industri, sistem kendali, otomasi, elektronika, *embedded system*, dan *Internet of Things* (IoT)[cite: 1]. Memiliki pengalaman dalam pengembangan sistem *monitoring*, sistem notifikasi industri, *transmitter* instrumentasi, serta integrasi sensor dan aktuator[cite: 1]. Menguasai MATLAB, Arduino IDE, Proteus, CX-Programmer, SolidWorks, C/C++, dan Python[cite: 1]. Memiliki motivasi tinggi untuk mengembangkan solusi rekayasa yang inovatif, aplikatif, dan relevan dengan kebutuhan industri[cite: 1].</p>
+    <p>Mahasiswa Teknologi Rekayasa Instrumentasi dan Kontrol Universitas Gadjah Mada dengan minat kuat pada instrumentasi industri, sistem kendali, otomasi, elektronika, *embedded system*, dan *Internet of Things* (IoT)[cite: 3]. Memiliki pengalaman dalam pengembangan sistem *monitoring*, sistem notifikasi industri, *transmitter* instrumentasi, serta integrasi sensor dan aktuator[cite: 3]. Menguasai MATLAB, Arduino IDE, Proteus, CX-Programmer, SolidWorks, C/C++, dan Python[cite: 3]. Memiliki motivasi tinggi untuk mengembangkan solusi rekayasa yang inovatif, aplikatif, dan relevan dengan kebutuhan industri[cite: 3].</p>
 
     <h2>Pendidikan</h2>
     <ul class="project-list">
         <li>
             <strong>Universitas Gadjah Mada Yogyakarta, Indonesia</strong>
-            Sarjana Terapan Teknologi Rekayasa Instrumentasi dan Kontrol (Agustus 2023 - Sekarang)[cite: 1]<br>
-            IPK Sementara: 3.76/4.00[cite: 2]
+            <span class="date">Agustus 2023 - Agustus 2027 (Expected)[cite: 3]</span>
+            Sarjana Terapan Teknologi Rekayasa Instrumentasi dan Kontrol[cite: 3]<br>
+            IPK Sementara: 3.76/4.00[cite: 2]<br>
+            Mempelajari dan mempraktikkan perancangan sistem *monitoring* dan kontrol berbasis sensor, aktuator, mikrokontroler, dan PLC[cite: 3]. Aktif mengembangkan proyek di bidang instrumentasi, *embedded system*, *machine learning*, *computer vision*, dan otomasi industri menggunakan perangkat lunak seperti MATLAB, Proteus, CX-Programmer, SolidWorks, dan Arduino IDE[cite: 3].
         </li>
         <li>
             <strong>MAS Tarbiyatut Tholabah - Lamongan, Jawa Timur, Indonesia</strong>
-            Madrasah Aliyah Jurusan Matematika dan Ilmu Pengetahuan Alam (Juni 2020 - Juni 2023)[cite: 1]<br>
-            Nilai: 91.20/100.00[cite: 1]
+            <span class="date">Juni 2020 - Juni 2023[cite: 3]</span>
+            Madrasah Aliyah Jurusan Matematika dan Ilmu Pengetahuan Alam[cite: 3]<br>
+            Nilai: 91.20/100.00[cite: 3]<br>
+            Aktif dalam organisasi COSSINES sebagai anggota divisi Minat dan Bakat[cite: 3].
         </li>
     </ul>
 
-    <h2>Keahlian Teknis</h2>
+    <h2>Keahlian</h2>
     <ul class="skills-list">
-        <li><strong>Bidang Fokus:</strong> Instrumentasi Industri, Kalibrasi Instrumen, Kontrol Proses, Otomasi Industri, *Embedded System*, *Internet of Things* (IoT)[cite: 1].</li>
-        <li><strong>Perangkat Keras & Desain:</strong> ESP32, Desain PCB, Analisis dan Troubleshooting Rangkaian[cite: 1].</li>
-        <li><strong>Perangkat Lunak & Pemrograman:</strong> C/C++, Python, MATLAB, Machine Learning, Pemrograman PLC (CX-Programmer), Pengembangan HMI (CX-Designer, AVEVA InTouch), SolidWorks, Proteus[cite: 1].</li>
+        <li><strong>Keahlian Teknis:</strong> Instrumentasi Industri, Kalibrasi Instrumen, Kontrol Proses, Otomasi Industri, Embedded System, Internet of Things (IoT), ESP32, Desain PCB, Analisis dan Troubleshooting Rangkaian, C/C++, Python, MATLAB, Machine Learning, Pemrograman PLC menggunakan CX-Programmer, Pengembangan HMI menggunakan CX-Designer, AVEVA InTouch, SolidWorks, dan Proteus[cite: 3].</li>
+        <li><strong>Keahlian Non-Teknis:</strong> Pemecahan Masalah, Berpikir Analitis, Kerja Sama Tim, Komunikasi, Adaptabilitas, Manajemen Waktu, Berpikir Kritis, dan Ketelitian[cite: 3].</li>
     </ul>
 
-    <h2>Pengalaman & Proyek Terkini</h2>
+    <h2>Pengalaman Profesional</h2>
     <ul class="project-list">
         <li>
-            <strong>Magang Engineering - Instrumentasi dan Utilitas (PT Global Onkolab Farma / Kalbe Group)</strong>
-            Juli 2025 - Desember 2025[cite: 1]. Melakukan kalibrasi instrumen, *preventive maintenance* sistem utilitas industri (HVAC, PW, WFI, PSG), dan mengembangkan sistem *monitoring* utilitas berbasis ESP32[cite: 1].
-        </li>
-        <li>
-            <strong>Sistem Alarm Keselamatan Cold Storage Berbasis Monitoring dan Notifikasi Real-Time</strong>
-            Agustus 2025 - September 2025[cite: 1]. Mengembangkan sistem alarm berbasis ESP32 dengan komunikasi MQTT dan notifikasi Telegram untuk memantau aktivitas pekerja di lingkungan industri[cite: 1].
-        </li>
-        <li>
-            <strong>Alat Pengukur Dimensi Luka Berbasis AI dan Sensor Non-Kontak</strong>
-            Agustus 2024 - Januari 2025[cite: 1]. Mengembangkan alat pengukur menggunakan Raspberry Pi, kamera, dan sensor *Time-of-Flight* (TOF), serta melatih model YOLOv8 untuk deteksi objek[cite: 1].
-        </li>
-        <li>
-            <strong>Industrial Differential Pressure Transmitter (DPT)</strong>
-            Juli 2025 - Desember 2025[cite: 1]. Merancang prototipe DPT untuk aplikasi industri, termasuk skematik, PCB, dan rangkaian *signal conditioning*[cite: 1].
+            <strong>Magang Engineering - Instrumentasi dan Utilitas</strong>
+            <span class="date">Juli 2025 - Desember 2025 | PT Global Onkolab Farma (Kalbe Group)[cite: 3]</span>
+            Melakukan kalibrasi instrumen temperatur, kelembapan, tekanan, RTD PT100, termokopel, dan *pressure gauge*[cite: 3]. Mendukung kegiatan *preventive maintenance*, *monitoring*, dan *troubleshooting* pada sistem utilitas industri (HVAC, PW, WFI, PSG)[cite: 3]. Mengembangkan sistem *monitoring* dan notifikasi berbasis ESP32 terintegrasi Telegram, serta merancang prototipe Differential Pressure Transmitter (DPT) untuk aplikasi instrumentasi industri[cite: 3].
         </li>
         <li>
             <strong>Manajemen Proyek KKN-PPM UGM</strong>
-            Juli 2026. Menjadi koordinator program "Sawah Race" di Desa Sidomulyo.
+            <span class="date">Juli 2026 | Desa Sidomulyo</span>
+            Menjadi koordinator dan inisiator program jalan sehat "Sawah Race" serta pasar tradisional "Pasar Mantra".
         </li>
         <li>
             <strong>Pembangunan Infrastruktur Kelistrikan Peternakan</strong>
-            Juli 2026. Instalasi kabel kelistrikan untuk kandang ayam petelur Omega-3.
+            <span class="date">Juli 2026</span>
+            Eksekusi instalasi kabel dan perpipaan kelistrikan untuk kandang ayam petelur Omega-3.
         </li>
+    </ul>
+
+    <h2>Proyek dan Penelitian</h2>
+    <ul class="project-list">
+        <li>
+            <strong>Sistem Alarm Keselamatan Cold Storage Berbasis Monitoring dan Notifikasi Real-Time</strong>
+            <span class="date">Agustus 2025 - September 2025[cite: 3]</span>
+            Mengembangkan sistem alarm berbasis ESP32 untuk memantau aktivitas pekerja[cite: 3]. Mengintegrasikan komunikasi MQTT, alarm *buzzer*, notifikasi Telegram untuk status ENTRY, EXIT, dan ALARM, serta *web monitoring* lokal dengan pengaturan durasi aman aktivitas[cite: 3].
+        </li>
+        <li>
+            <strong>Alat Pengukur Dimensi Luka Berbasis AI dan Sensor Non-Kontak</strong>
+            <span class="date">Agustus 2024 - Januari 2025[cite: 3]</span>
+            Mengembangkan alat pengukur menggunakan Raspberry Pi, kamera, dan sensor *Time-of-Flight* (TOF)[cite: 3]. Melatih model YOLOv8 melalui Google Colab untuk deteksi objek luka, memprogram sistem dengan Python, dan mengembangkan antarmuka GUI menggunakan QtDesigner[cite: 3].
+        </li>
+        <li>
+            <strong>Industrial Differential Pressure Transmitter (DPT)</strong>
+            <span class="date">Juli 2025 - Desember 2025[cite: 3]</span>
+            Merancang prototipe DPT untuk aplikasi industri (sistem *transmitter* 2-wire dan 3-wire)[cite: 3]. Merancang skematik dan PCB, mengintegrasikan sensor tekanan, mengembangkan rangkaian *signal conditioning*, serta melakukan kalibrasi dan pengujian performa[cite: 3].
+        </li>
+        <li>
+            <strong>Sistem Notifikasi Status Purified Water (PW)</strong>
+            <span class="date">Juli 2025 - Agustus 2025[cite: 3]</span>
+            Mengembangkan sistem notifikasi berbasis ESP-32S untuk memantau operasional PWG 1, PWG 2, dan PWD dengan membaca sinyal lampu indikator panel[cite: 3]. Mengintegrasikan notifikasi Telegram dan pencatatan alarm otomatis via Google Forms dan Google Sheets[cite: 3].
+        </li>
+        <li>
+            <strong>Sistem Pengusir Burung Otomatis pada Tower PLN</strong>
+            <span class="date">Januari 2025 - Mei 2025[cite: 3]</span>
+            Mengembangkan alat pengusir burung otomatis berbasis ESP32 yang dilengkapi sirine, sensor gerak, dan sensor ultrasonik untuk mengurangi potensi gangguan operasional[cite: 3].
+        </li>
+        <li>
+            <strong>Proyek Penelitian Sistem Deteksi Sel Kanker Berbasis Data</strong>
+            <span class="date">Agustus 2024 - Januari 2025[cite: 3]</span>
+            Mengembangkan sistem deteksi sel kanker menggunakan pendekatan *machine learning* untuk mendukung analisis data medis secara lebih terstruktur[cite: 3].
+        </li>
+        <li>
+            <strong>Proyek Penelitian Sistem Prediksi Cuaca Berbasis Data Historis</strong>
+            <span class="date">Agustus 2024 - Januari 2025[cite: 3]</span>
+            Mengembangkan sistem prediksi cuaca menggunakan algoritma prediktif dan mengeksplorasi metode analisis data untuk mendukung pengambilan keputusan di bidang meteorologi[cite: 3].
+        </li>
+    </ul>
+
+    <h2>Prestasi & Kompetisi</h2>
+    <ul class="project-list">
+        <li><strong>Olimpiade Sains Bima - Bidang Fisika</strong>[cite: 3]<br>Mengikuti kompetisi fisika untuk memperkuat pemahaman konsep, kemampuan analitis, dan pemecahan masalah melalui tantangan ilmiah kompetitif[cite: 3].</li>
+        <li><strong>Olimpiade Sains - Pelajar Nasional Fisika</strong>[cite: 3]<br>Mengikuti kompetisi sains tingkat nasional bidang fisika untuk menguji penerapan konsep fisika tingkat lanjut dan kemampuan penalaran analitis[cite: 3].</li>
+        <li><strong>ONMIPASA (Olimpiade Nasional Matematika, Ilmu Pengetahuan, dan Bahasa)</strong>[cite: 3]<br>Mengikuti olimpiade tingkat nasional multidisiplin untuk mengasah kemampuan logika, pemecahan masalah ilmiah, serta pemahaman bahasa[cite: 3].</li>
     </ul>
 </div>
 
